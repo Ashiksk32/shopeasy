@@ -1,0 +1,958 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy</title>
+    <link rel="icon" href="ecammerce-removebg-preview.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: rgb(233, 255, 255);" display="cover">
+    <header>
+        <div class="navbar">
+            <div class="nav-logo">
+                <div class="logo"></div>
+            </div>
+            <div class="nav-search">
+                
+                <input placeholder="Search ShopEasy" class="search-input">
+                <div class="search-icon"><img src="Magnifying_glass_icon.svg-removebg-preview.png" alt="" width="20px" height="20px"></div>
+            </div>
+            <div class="nav-sign border">
+                
+                <p><span>sign in</span></p>
+                <p class="nav-second">Account and lists</p>
+            </div>
+            <div class="nav-return border">
+                <p><span>become</span></p>
+                <p class="nav-second">a seller</p>
+            </div>
+            <div class="nav-cart border" onclick="cartsection()">
+             <div class="cartimg"><img src="istockphoto-1371799921-612x612-removebg-preview.png" alt="" width="55px" height="50px"></div>
+               <p class="cartcount">0</p>
+            </div>
+        </div>
+
+        <div class="pannel">
+            <div class="pannel-options">
+                <div class="mob"> <p>ALL</p>
+                <div id="items" class="all">
+                <div class="all"><ul >
+                    <p>mobiles</p><br>
+                    <p>fashin </p><br>
+                    <p>electronics </p><br>
+                    <p>home & furniture </p><br>
+                    <p>appliances </p>
+                  </ul></div>
+            </div></div>
+            </div>   
+               <div class="pannel-options">
+                <div class="mob"><p>mobiles</p>
+                <div id="items">
+                <ul><li>redmi</li>
+                    <li>vivo</li>
+                    <li>apple</li>
+                    <li>samsung</li>
+                    <li>poco</li>
+                    <li>nokia</li>
+                    <li>moto</li>
+                </ul></div></div>
+                <div class="fashion">
+                <p>Fashion</p>
+                <div id="products">
+                    <ul id="subprods">
+                        <li >men's wear <img src="https://cdn-icons-png.flaticon.com/512/32/32213.png" alt="" width="10">
+                            <ul id="supprods">
+                                  <li onclick="showProducts(0)">shirts</li>
+                                  <li onclick="showProducts(1)">jeans</li>
+                                  <li onclick="showProducts(2)">T-shirts</li>
+                                  <li>tracks</li>
+                                  <li>hoodies</li>
+                                  <li>jackets</li>
+                            </ul>
+                        </li>
+                        <li>Women's wear <img src="https://cdn-icons-png.flaticon.com/512/32/32213.png" alt="" width="10">
+                            <ul id="supprods">
+                                  <li onclick="showProducts(3)">sarees</li>
+                                  <li onclick="showProducts(4)">kurtas</li>
+                                  <li>tops</li>
+                                  <li>shirts</li>
+                                  <li>jeans</li>
+                                  <li>T-shirts</li>
+                                  <li>hoodies</li>
+                                  
+                            </ul>
+                        </li>
+                        <li>men's footwear <img src="https://cdn-icons-png.flaticon.com/512/32/32213.png" alt="" width="10">
+                            <ul id="supprods">
+                                  <li>slippers</li>
+                                  <li>sports shoes</li>
+                                  <li>casual shoes</li>
+                                  <li>sneakers</li>
+                                  <li>flip flops</li>
+                                  
+                            </ul>
+                        </li>
+                        <li>Women's footwear <img src="https://cdn-icons-png.flaticon.com/512/32/32213.png" alt="" width="10">
+                            <ul id="supprods">
+                                <li>slippers</li>
+                                <li>sports shoes</li>
+                                <li>casual shoes</li>
+                                <li>sneakers</li>
+                                <li>flip flops</li>
+                            </ul>
+                        </li>
+                        <li>kids wear <img src="https://cdn-icons-png.flaticon.com/512/32/32213.png" alt="" width="10">
+                            <ul id="supprods">
+                                  <li>shirts</li>
+                                  <li>jeans</li>
+                                  <li>T-shirts</li>
+                                  <li>tracks</li>
+                                  <li>hoodies</li>
+                                  <li>jackets</li>
+                            </ul>
+                        </li>
+                        <li>kids footwear <img src="https://cdn-icons-png.flaticon.com/512/32/32213.png" alt="" width="10">
+                            <ul id="supprods">
+                                <li>slippers</li>
+                                <li>sports shoes</li>
+                                <li>casual shoes</li>
+                                <li>sneakers</li>
+                                <li>flip flops</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div></div>
+                <br>
+                <div class="fashion">
+                    <p>electronics</p>
+                    <div id="products">
+                        <ul id="subprods">
+                            <li >Audio <img src="https://cdn-icons-png.flaticon.com/512/32/32213.png" alt="" width="10">
+                                <ul id="supprods">
+                                      <li >Bluetooth headphones</li>
+                                      <li>wired headphones</li>
+                                      <li>speakers</li>
+                                      <li>home theaters</li>
+                                
+                                </ul>
+                            </li>
+                            <li>Laptop&pc <img src="https://cdn-icons-png.flaticon.com/512/32/32213.png" alt="" width="10">
+                                <ul id="supprods">
+                                      <li>laptops</li>
+                                      <li>desktops</li>
+                                      <li>mini pcs</li>
+                                      <li>All in one pcs</li>
+                                   
+                                </ul>
+                            </li>
+                            <li>cameras <img src="https://cdn-icons-png.flaticon.com/512/32/32213.png" alt="" width="10">
+                                <ul id="supprods">
+                                      <li>shirts</li>
+                                      <li>jeans</li>
+                                      <li>T-shirts</li>
+                                      <li>tracks</li>
+                                      <li>hoodies</li>
+                                      <li>jackets</li>
+                                </ul>
+                            </li>
+                            <li>personal care <img src="https://cdn-icons-png.flaticon.com/512/32/32213.png" alt="" width="10">
+                                <ul id="supprods">
+                                      <li>shirts</li>
+                                      <li>jeans</li>
+                                      <li>T-shirts</li>
+                                      <li>tracks</li>
+                                      <li>hoodies</li>
+                                      <li>jackets</li>
+                                </ul>
+                            </li>
+                            <li>Tabs<img src="https://cdn-icons-png.flaticon.com/512/32/32213.png" alt="" width="10">
+                                <ul id="supprods">
+                                      <li>shirts</li>
+                                      <li>jeans</li>
+                                      <li>T-shirts</li>
+                                      <li>tracks</li>
+                                      <li>hoodies</li>
+                                      <li>jackets</li>
+                                </ul>
+                            </li>
+                            <li>gaming <img src="https://cdn-icons-png.flaticon.com/512/32/32213.png" alt="" width="10">
+                                <ul id="supprods">
+                                      <li>shirts</li>
+                                      <li>jeans</li>
+                                      <li>T-shirts</li>
+                                      <li>tracks</li>
+                                      <li>hoodies</li>
+                                      <li>jackets</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div></div>
+                <br>
+                <div class="fashion">
+                    <p>home & furniture</p>
+                    <div id="products">
+                        <ul id="subprods">
+                            <li >men's wear <img src="https://cdn-icons-png.flaticon.com/512/32/32213.png" alt="" width="10">
+                                <ul id="supprods">
+                                      <li >shirts</li>
+                                      <li>jeans</li>
+                                      <li>T-shirts</li>
+                                      <li>tracks</li>
+                                      <li>hoodies</li>
+                                      <li>jackets</li>
+                                </ul>
+                            </li>
+                            <li>Women's wear <img src="https://cdn-icons-png.flaticon.com/512/32/32213.png" alt="" width="10">
+                                <ul id="supprods">
+                                      <li>shirts</li>
+                                      <li>jeans</li>
+                                      <li>T-shirts</li>
+                                      <li>tracks</li>
+                                      <li>hoodies</li>
+                                      <li>jackets</li>
+                                </ul>
+                            </li>
+                            <li>men's footwear <img src="https://cdn-icons-png.flaticon.com/512/32/32213.png" alt="" width="10">
+                                <ul id="supprods">
+                                      <li>shirts</li>
+                                      <li>jeans</li>
+                                      <li>T-shirts</li>
+                                      <li>tracks</li>
+                                      <li>hoodies</li>
+                                      <li>jackets</li>
+                                </ul>
+                            </li>
+                            <li>Women's footwear <img src="https://cdn-icons-png.flaticon.com/512/32/32213.png" alt="" width="10">
+                                <ul id="supprods">
+                                      <li>shirts</li>
+                                      <li>jeans</li>
+                                      <li>T-shirts</li>
+                                      <li>tracks</li>
+                                      <li>hoodies</li>
+                                      <li>jackets</li>
+                                </ul>
+                            </li>
+                            <li>kids wear <img src="https://cdn-icons-png.flaticon.com/512/32/32213.png" alt="" width="10">
+                                <ul id="supprods">
+                                      <li>shirts</li>
+                                      <li>jeans</li>
+                                      <li>T-shirts</li>
+                                      <li>tracks</li>
+                                      <li>hoodies</li>
+                                      <li>jackets</li>
+                                </ul>
+                            </li>
+                            <li>kids footwear <img src="https://cdn-icons-png.flaticon.com/512/32/32213.png" alt="" width="10">
+                                <ul id="supprods">
+                                      <li>shirts</li>
+                                      <li>jeans</li>
+                                      <li>T-shirts</li>
+                                      <li>tracks</li>
+                                      <li>hoodies</li>
+                                      <li>jackets</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div></div>
+                
+                <br>
+                <p>appliances</p>
+               </div>
+       
+        </div>
+
+        <div class="cartpage">
+            <h3>My Cart</h3>
+            <div class="cartitems">
+    
+            </div>
+            <h4>Total Amount to be Paid :<span class="totalamount">0</span></h4>
+            <div class="cart_btns">
+                <button type="button" onclick="clearCart()">Clear Cart</button>
+                <button type="button" onclick="placeOrder()">PlaceOrder!</button>
+            </div>
+        </div>
+        
+    </header>
+
+    <div class="home-page">
+       <br>
+       <div class="container">
+       <div class="slider-cont">
+        <div class="slider">
+            <img id= "slider-1" src="https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/b534ac69003a5693.jpg?q=20" alt="slider">
+            <img id="slider-2" src="https://rukminim1.flixcart.com/fk-p-flap/1620/270/image/a8083ac34b2151d4.jpeg?q=20" alt="Accomodations" >
+            <img id="slider-3" src="https://rukminim1.flixcart.com/fk-p-flap/1620/270/image/8505baa25cf466f3.jpeg?q=20" alt="Accomodations" >
+            <img id="slider-4" src="https://rukminim1.flixcart.com/fk-p-flap/1620/270/image/4c4320b645577e33.jpeg?q=20" alt="Accomodations" >
+          </div>
+          <div class="slider-nav">
+            <a href="#slider-1"></a>
+            <a href="#slider-2"></a>
+            <a href="#slider-3"></a>
+          </div>
+       </div>
+   
+        
+
+        <div class="westrenwear">
+            <img src="https://assets.ajio.com/cms/AJIO/WEB/D-1.0-UHP-241224-HIM-z10-p4-asos-min35.jpg" alt="" width="105%">
+                <table>
+                    <tr>
+                        <td>
+                            <img src="https://assets.ajio.com/cms/AJIO/WEB/D-UHP1.0-06122024-Westernwear-Puma-Levis-Min40.jpg" alt="" width="110%">
+                        </td>
+                        <td>
+                            <img src="https://assets.ajio.com/cms/AJIO/WEB/D-UHP1.0-06122024-Westernwear-TIGC-TBH-Min50.jpg" alt=""width="110%" onclick="showProducts(0)">
+                        </td>
+                        <td>
+                            <img src="https://assets.ajio.com/cms/AJIO/WEB/D-UHP1.0-06122024-Westernwear-Lee-Spykar-Min40.jpg" alt="" width="110%">
+                        </td>
+                        <td>
+                            <img src="https://assets.ajio.com/cms/AJIO/WEB/D-UHP1.0-06122024-Westernwear-JP-Allensolly-40to70.jpg" alt=""width="110%">
+                        </td>
+                    </tr>
+                </table>
+                <img src="https://mercury.akamaized.net/i/e35fd5004d3ef58a7e511ca78677e4a3_306107_0.jpg" alt="" width="100%">
+        </div>
+       </div>
+        <div class="products">
+            <!------------------------------Shirts---------------------------------->
+            <div class="product_items">
+              <div class="row_items">
+                  <div class="item">
+                      <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/2164373/2017/11/15/11510749192975-Roadster-Men-Brown--Black-Regular-Fit-Checked-Casual-Shirt-8071510749192783-1.jpg" class="item_img">
+                      <h4 class="item_name">Roadstar Checked shirt</h4>
+                      <h4>Rs.<del>1999</del> <span class="item_price">1129</span></h4>
+                      <input type="button" value="Add-to-cart" class="item_btn">
+                  </div>
+                  <div class="item">
+                      <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/1364628/2016/8/31/11472636737718-Roadster-Men-Blue-Regular-Fit-Printed-Casual-Shirt-6121472636737160-1.jpg" class="item_img">
+                      <h4 class="item_name">Roadstar Denim shirt</h4>
+                      <h4>Rs.<del>1899</del> <span class="item_price">1329</span></h4>
+                      <input type="button" value="Add-to-cart" class="item_btn">
+                  </div>
+                  <div class="item">
+                      <img src="https://thehouseofrare.com/cdn/shop/products/IMG_0586_8bd130d1-149d-4c58-8691-09d352a1fa7a_800x.jpg?v=1675748735" class="item_img">
+                      <h4 class="item_name">Formal Shirt</h4>
+                      <h4>Rs.<del>1499</del> <span class="item_price">899</span></h4>
+                      <input type="button" value="Add-to-cart" class="item_btn">
+                  </div>
+                  <div class="item">
+                      <img src="https://assets.ajio.com/medias/sys_master/root/20230906/2BEY/64f80929afa4cf41f5b34ce8/-473Wx593H-461119105-blue-MODEL3.jpg" class="item_img">
+                      <h4 class="item_name">Large Checked Shirt</h4>
+                      <h4>Rs.<del>1899</del> <span class="item_price">999</span></h4>
+                      <input type="button" value="Add-to-cart" class="item_btn">
+                  </div>
+              </div>
+              <div class="row_items">
+                  <div class="item">
+                      <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/2164373/2017/11/15/11510749192975-Roadster-Men-Brown--Black-Regular-Fit-Checked-Casual-Shirt-8071510749192783-1.jpg" class="item_img">
+                      <h4 class="item_name">Roadstar Checked shirt</h4>
+                      <h4>Rs.<del>1999</del> <span class="item_price">1129</span></h4>
+                      <input type="button" value="Add-to-cart" class="item_btn">
+                  </div>
+                  <div class="item">
+                      <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/1364628/2016/8/31/11472636737718-Roadster-Men-Blue-Regular-Fit-Printed-Casual-Shirt-6121472636737160-1.jpg" class="item_img">
+                      <h4 class="item_name">Roadstar Denim shirt</h4>
+                      <h4>Rs.<del>1899</del> <span class="item_price">1329</span></h4>
+                      <input type="button" value="Add-to-cart" class="item_btn">
+                  </div>
+                  <div class="item">
+                      <img src="https://thehouseofrare.com/cdn/shop/products/IMG_0586_8bd130d1-149d-4c58-8691-09d352a1fa7a_800x.jpg?v=1675748735" class="item_img">
+                      <h4 class="item_name">Formal Shirt</h4>
+                      <h4>Rs.<del>1499</del> <span class="item_price">899</span></h4>
+                      <input type="button" value="Add-to-cart" class="item_btn">
+                  </div>
+                  <div class="item">
+                      <img src="https://assets.ajio.com/medias/sys_master/root/20230906/2BEY/64f80929afa4cf41f5b34ce8/-473Wx593H-461119105-blue-MODEL3.jpg" class="item_img">
+                      <h4 class="item_name">Large Checked Shirt</h4>
+                      <h4>Rs.<del>1899</del> <span class="item_price">999</span></h4>
+                      <input type="button" value="Add-to-cart" class="item_btn">
+                  </div>
+              </div>
+              <div class="row_items">
+                  <div class="item">
+                      <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/2164373/2017/11/15/11510749192975-Roadster-Men-Brown--Black-Regular-Fit-Checked-Casual-Shirt-8071510749192783-1.jpg" class="item_img">
+                      <h4 class="item_name">Roadstar Checked shirt</h4>
+                      <h4>Rs.<del>1999</del> <span class="item_price">1129</span></h4>
+                      <input type="button" value="Add-to-cart" class="item_btn">
+                  </div>
+                  <div class="item">
+                      <img src="https://assets.myntassets.com/h_1440,q_100,w_1080/v1/assets/images/1364628/2016/8/31/11472636737718-Roadster-Men-Blue-Regular-Fit-Printed-Casual-Shirt-6121472636737160-1.jpg" class="item_img">
+                      <h4 class="item_name">Roadstar Denim shirt</h4>
+                      <h4>Rs.<del>1899</del> <span class="item_price">1329</span></h4>
+                      <input type="button" value="Add-to-cart" class="item_btn">
+                  </div>
+                  <div class="item">
+                      <img src="https://thehouseofrare.com/cdn/shop/products/IMG_0586_8bd130d1-149d-4c58-8691-09d352a1fa7a_800x.jpg?v=1675748735" class="item_img">
+                      <h4 class="item_name">Formal Shirt</h4>
+                      <h4>Rs.<del>1499</del> <span class="item_price">899</span></h4>
+                      <input type="button" value="Add-to-cart" class="item_btn">
+                  </div>
+                  <div class="item">
+                      <img src="https://assets.ajio.com/medias/sys_master/root/20230906/2BEY/64f80929afa4cf41f5b34ce8/-473Wx593H-461119105-blue-MODEL3.jpg" class="item_img">
+                      <h4 class="item_name">Large Checked Shirt</h4>
+                      <h4>Rs.<del>1899</del> <span class="item_price">999</span></h4>
+                      <input type="button" value="Add-to-cart" class="item_btn">
+                  </div>
+              </div>
+            </div>
+            <!------------------------------Shirts End---------------------------------->
+            <div class="product_items">
+                <div class="row_items">
+                    <div class="item">
+                        <img src="https://static1.squarespace.com/static/58add8dd6a49639a87822092/58b5c883bf629a74ccc333a9/6297a4c78fc7dd7a3a38065f/1654106498099/how-to-style-mens-jeans.jpg?format=1500w" class="item_img">
+                        <h4 class="item_name">Stylish Casual</h4>
+                        <h4><del>Rs.1499</del> <span class="item_price">1199</span></h4>
+                        <input type="button" value="Add-to-Cart" class="item_btn">
+                    </div>
+                    <div class="item">
+                        <img src="https://assets.ajio.com/medias/sys_master/root/20210923/ovv7/614b7854f997ddce89d75509/-473Wx593H-469009841-blue-MODEL.jpg" class="item_img">
+                        <h4 class="item_name">Denim Jeans</h4>
+                        <h4><del>Rs.2999</del> <span class="item_price">1499</span></h4>
+                        <input type="button" value="Add-to-Cart" class="item_btn">
+                    </div>
+                    <div class="item">
+                        <img src="https://www.tradeindia.com/_next/image/?url=https%3A%2F%2Ftiimg.tistatic.com%2Ffp%2F1%2F007%2F766%2Fbeautiful-casual-wear-and-soft-comfortable-modern-breathable-stylish-demin-regular-fit-jeans-pant-for-men-943.jpg&w=750&q=75"  class="item_img">
+                        <h4 class="item_name">Stylish Jeans</h4>
+                        <h4><del>Rs.1999</del> <span class="item_price">1299</span></h4>
+                        <input type="button" value="Add-to-Cart" class="item_btn">
+                    </div>
+                    <div class="item">
+                        <img src="https://assets.ajio.com/medias/sys_master/root/20230331/3ckF/642705dc711cf97ba70093af/-473Wx593H-469265978-darkblue-MODEL.jpg" class="item_img">
+                        <h4 class="item_name">Stylish Tonjean</h4>
+                        <h4><del>Rs.1799</del> <span class="item_price">999</span></h4>
+                        <input type="button" value="Add-to-Cart" class="item_btn">
+                    </div>
+                </div>
+                <div class="row_items">
+                    <div class="item">
+                        <img src="https://static1.squarespace.com/static/58add8dd6a49639a87822092/58b5c883bf629a74ccc333a9/6297a4c78fc7dd7a3a38065f/1654106498099/how-to-style-mens-jeans.jpg?format=1500w" class="item_img">
+                        <h4 class="item_name">Stylish Casual</h4>
+                        <h4><del>Rs.1499</del> <span class="item_price">1199</span></h4>
+                        <input type="button" value="Add-to-Cart" class="item_btn">
+                    </div>
+                    <div class="item">
+                        <img src="https://assets.ajio.com/medias/sys_master/root/20210923/ovv7/614b7854f997ddce89d75509/-473Wx593H-469009841-blue-MODEL.jpg" class="item_img">
+                        <h4 class="item_name">Denim Jeans</h4>
+                        <h4><del>Rs.2999</del> <span class="item_price">1499</span></h4>
+                        <input type="button" value="Add-to-Cart" class="item_btn">
+                    </div>
+                    <div class="item">
+                        <img src="https://www.tradeindia.com/_next/image/?url=https%3A%2F%2Ftiimg.tistatic.com%2Ffp%2F1%2F007%2F766%2Fbeautiful-casual-wear-and-soft-comfortable-modern-breathable-stylish-demin-regular-fit-jeans-pant-for-men-943.jpg&w=750&q=75"  class="item_img">
+                        <h4 class="item_name">Stylish Jeans</h4>
+                        <h4><del>Rs.1999</del> <span class="item_price">1299</span></h4>
+                        <input type="button" value="Add-to-Cart" class="item_btn">
+                    </div>
+                    <div class="item">
+                        <img src="https://assets.ajio.com/medias/sys_master/root/20230331/3ckF/642705dc711cf97ba70093af/-473Wx593H-469265978-darkblue-MODEL.jpg" class="item_img">
+                        <h4 class="item_name">Stylish Tonjean</h4>
+                        <h4><del>Rs.1799</del> <span class="item_price">999</span></h4>
+                        <input type="button" value="Add-to-Cart" class="item_btn">
+                    </div>
+                </div>
+                <div class="row_items">
+                    <div class="item">
+                        <img src="https://static1.squarespace.com/static/58add8dd6a49639a87822092/58b5c883bf629a74ccc333a9/6297a4c78fc7dd7a3a38065f/1654106498099/how-to-style-mens-jeans.jpg?format=1500w" class="item_img">
+                        <h4 class="item_name">Stylish Casual</h4>
+                        <h4><del>Rs.1499</del> <span class="item_price">1199</span></h4>
+                        <input type="button" value="Add-to-Cart" class="item_btn">
+                    </div>
+                    <div class="item">
+                        <img src="https://assets.ajio.com/medias/sys_master/root/20210923/ovv7/614b7854f997ddce89d75509/-473Wx593H-469009841-blue-MODEL.jpg" class="item_img">
+                        <h4 class="item_name">Denim Jeans</h4>
+                        <h4><del>Rs.2999</del> <span class="item_price">1499</span></h4>
+                        <input type="button" value="Add-to-Cart" class="item_btn">
+                    </div>
+                    <div class="item">
+                        <img src="https://www.tradeindia.com/_next/image/?url=https%3A%2F%2Ftiimg.tistatic.com%2Ffp%2F1%2F007%2F766%2Fbeautiful-casual-wear-and-soft-comfortable-modern-breathable-stylish-demin-regular-fit-jeans-pant-for-men-943.jpg&w=750&q=75"  class="item_img">
+                        <h4 class="item_name">Stylish Jeans</h4>
+                        <h4><del>Rs.1999</del> <span class="item_price">1299</span></h4>
+                        <input type="button" value="Add-to-Cart" class="item_btn">
+                    </div>
+                    <div class="item">
+                        <img src="https://assets.ajio.com/medias/sys_master/root/20230331/3ckF/642705dc711cf97ba70093af/-473Wx593H-469265978-darkblue-MODEL.jpg" class="item_img">
+                        <h4 class="item_name">Stylish Tonjean</h4>
+                        <h4><del>Rs.1799</del> <span class="item_price">999</span></h4>
+                        <input type="button" value="Add-to-Cart" class="item_btn">
+                    </div>
+                </div>
+                    </div>
+                     <!------------------------------tshirts---------------------------------->
+
+                    <div class="product_items">
+                        <div class="row_items">
+                            <div class="item">
+                                <img src="https://rukminim2.flixcart.com/image/612/612/kfoapow0-0/t-shirt/w/l/7/s-daredevil-party-wear-wrath-original-imafw2kc8ducmcbp.jpeg?q=70" class="item_img">
+                                <h4 class="item_name">man colorblock</h4>
+                                <h4><del>Rs.449</del> <span class="item_price">199</span></h4>
+                                <input type="button" value="Add-to-Cart" class="item_btn">
+                            </div>
+                            <div class="item">
+                                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/l/d/q/xl-ts36-vebnor-original-imah8sf6z96grbkr.jpeg?q=70" class="item_img">
+                                <h4 class="item_name">solid polo neck</h4>
+                                <h4><del>Rs.349</del> <span class="item_price">170</span></h4>
+                                <input type="button" value="Add-to-Cart" class="item_btn">
+                            </div>
+                            <div class="item">
+                                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/3/w/m/xxl-t15-t3-autna-original-imagqqbjfzuef4yk.jpeg?q=70"  class="item_img">
+                                <h4 class="item_name">solid round neck</h4>
+                                <h4><del>Rs.1999</del> <span class="item_price">399</span></h4>
+                                <input type="button" value="Add-to-Cart" class="item_btn">
+                            </div>
+                            <div class="item">
+                                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/f/h/n/l-grey-1-adam-white-original-imahyz5pffyyyhrx.jpeg?q=70" class="item_img">
+                                <h4 class="item_name">striped neck</h4>
+                                <h4><del>Rs.1799</del> <span class="item_price">399</span></h4>
+                                <input type="button" value="Add-to-Cart" class="item_btn">
+                            </div>
+                        </div>
+                        <div class="row_items">
+                            <div class="item">
+                                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/r/l/p/-original-imah4pg8fxqen8zm.jpeg?q=70" class="item_img">
+                                <h4 class="item_name">Stylish Casual</h4>
+                                <h4><del>Rs.1499</del> <span class="item_price">1199</span></h4>
+                                <input type="button" value="Add-to-Cart" class="item_btn">
+                            </div>
+                            <div class="item">
+                                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/b/g/n/l-or10-technosport-original-imagnbpybsdmhtjw.jpeg?q=70" class="item_img">
+                                <h4 class="item_name">Denim Jeans</h4>
+                                <h4><del>Rs.2999</del> <span class="item_price">1499</span></h4>
+                                <input type="button" value="Add-to-Cart" class="item_btn">
+                            </div>
+                            <div class="item">
+                                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/c/h/a/l-solid-men-polo-neck-tshirt-inkkr-original-imah8jadmcus9uhm.jpeg?q=70"  class="item_img">
+                                <h4 class="item_name">Stylish Jeans</h4>
+                                <h4><del>Rs.1999</del> <span class="item_price">1299</span></h4>
+                                <input type="button" value="Add-to-Cart" class="item_btn">
+                            </div>
+                            <div class="item">
+                                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/2/q/h/l-vsdv-try-this-original-imahf7whzhbr5f92.jpeg?q=70" class="item_img">
+                                <h4 class="item_name">Stylish Tonjean</h4>
+                                <h4><del>Rs.1799</del> <span class="item_price">999</span></h4>
+                                <input type="button" value="Add-to-Cart" class="item_btn">
+                            </div>
+                        </div>
+                        <div class="row_items">
+                            <div class="item">
+                                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/0/y/w/m-ct02231560-rigo-original-imah6cabj8xhzg6p.jpeg?q=70" class="item_img">
+                                <h4 class="item_name">Stylish Casual</h4>
+                                <h4><del>Rs.1499</del> <span class="item_price">1199</span></h4>
+                                <input type="button" value="Add-to-Cart" class="item_btn">
+                            </div>
+                            <div class="item">
+                                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/0/k/d/xl-men-temu-polo-001-rizim-original-imah5yz9vm7rjdgt.jpeg?q=70" class="item_img">
+                                <h4 class="item_name">Denim Jeans</h4>
+                                <h4><del>Rs.2999</del> <span class="item_price">1499</span></h4>
+                                <input type="button" value="Add-to-Cart" class="item_btn">
+                            </div>
+                            <div class="item">
+                                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/i/w/p/xxl-ts85-vebnor-original-imah7n774asgyhbr.jpeg?q=70"  class="item_img">
+                                <h4 class="item_name">Stylish Jeans</h4>
+                                <h4><del>Rs.1999</del> <span class="item_price">1299</span></h4>
+                                <input type="button" value="Add-to-Cart" class="item_btn">
+                            </div>
+                            <div class="item">
+                                <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/t-shirt/c/i/g/s-os-100-vdorgnl-grn117-veirdo-original-imah4fy3zb5paeaj.jpeg?q=70" class="item_img">
+                                <h4 class="item_name">Stylish Tonjean</h4>
+                                <h4><del>Rs.1799</del> <span class="item_price">999</span></h4>
+                                <input type="button" value="Add-to-Cart" class="item_btn">
+                            </div>
+                        </div>
+                            </div>
+                            <!------------------------------women---------------------------------->
+                            <div class="product_items">
+                                <div class="row_items">
+                                    <div class="item">
+                                        <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/sari/n/8/0/free-759-pink-leheriya-silk-saree-lichi-soft-silk-jacquard-woven-original-imah7x3bu8qah9xt.jpeg?q=70" class="item_img">
+                                        <h4 class="item_name">art silk saree</h4>
+                                        <h4><del>Rs.1399</del> <span class="item_price">1099</span></h4>
+                                        <input type="button" value="Add-to-Cart" class="item_btn">
+                                    </div>
+                                    <div class="item">
+                                        <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/sari/0/m/k/free-hshsbs-banaras-silk-palace-unstitched-original-imahygzgghcjhzrf.jpeg?q=70" class="item_img">
+                                        <h4 class="item_name">banaras silk</h4>
+                                        <h4><del>Rs.1999</del> <span class="item_price">1499</span></h4>
+                                        <input type="button" value="Add-to-Cart" class="item_btn">
+                                    </div>
+                                    <div class="item">
+                                        <img src="https://rukminim2.flixcart.com/image/312/312/l2f20sw0/sari/f/3/j/free-3157-mysore-black-kanooda-prints-unstitched-original-imagdrk4ts47r9jv.jpeg?q=70"  class="item_img">
+                                        <h4 class="item_name">Classical-Dress</h4>
+                                        <h4><del>Rs.1599</del> <span class="item_price">1299</span></h4>
+                                        <input type="button" value="Add-to-Cart" class="item_btn">
+                                    </div>
+                                    <div class="item">
+                                        <img src="https://rukminim2.flixcart.com/image/312/312/xif0q/sari/f/m/j/free-lv-282-leelavati-unstitched-original-imah84zgyzfjhapq.jpeg?q=70" class="item_img">
+                                        <h4 class="item_name">Ethanic Wear for Women</h4>
+                                        <h4><del>Rs.1799</del> <span class="item_price">999</span></h4>
+                                        <input type="button" value="Add-to-Cart" class="item_btn">
+                                    </div>
+                                </div>
+                                <div class="row_items">
+                                    <div class="item">
+                                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/sari/3/k/v/free-1415s147aaa-samah-unstitched-original-imah27bpcakx2j28.jpeg?q=70" class="item_img">
+                                        <h4 class="item_name">Traditional-For-Women</h4>
+                                        <h4><del>Rs.1399</del> <span class="item_price">1099</span></h4>
+                                        <input type="button" value="Add-to-Cart" class="item_btn">
+                                    </div>
+                                    <div class="item">
+                                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/sari/n/h/c/free-1415s152-samah-unstitched-original-imah3wzx8sjr83mn.jpeg?q=70" class="item_img">
+                                        <h4 class="item_name">Traditional-Dress</h4>
+                                        <h4><del>Rs.1999</del> <span class="item_price">1499</span></h4>
+                                        <input type="button" value="Add-to-Cart" class="item_btn">
+                                    </div>
+                                    <div class="item">
+                                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/sari/q/o/c/free-38062-mirchi-fashion-unstitched-original-imah5zymz58jdz2z.jpeg?q=70"  class="item_img">
+                                        <h4 class="item_name">Classical-Dress</h4>
+                                        <h4><del>Rs.1599</del> <span class="item_price">1299</span></h4>
+                                        <input type="button" value="Add-to-Cart" class="item_btn">
+                                    </div>
+                                    <div class="item">
+                                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/sari/d/x/m/free-sarees-new-model-sarees-for-women-chiffon-saree-latest-original-imah5q4gpzdmff8a.jpeg?q=70" class="item_img">
+                                        <h4 class="item_name">Ethanic Wear for Women</h4>
+                                        <h4><del>Rs.1799</del> <span class="item_price">999</span></h4>
+                                        <input type="button" value="Add-to-Cart" class="item_btn">
+                                    </div>
+                                </div>
+                                <div class="row_items">
+                                    <div class="item">
+                                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/sari/n/y/p/free-aksaree-vdc-unstitched-original-imah34ygc2487fsh.jpeg?q=70" class="item_img">
+                                        <h4 class="item_name">Traditional-For-Women</h4>
+                                        <h4><del>Rs.1399</del> <span class="item_price">1099</span></h4>
+                                        <input type="button" value="Add-to-Cart" class="item_btn">
+                                    </div>
+                                    <div class="item">
+                                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/sari/3/v/r/free-designer-saree-organza-saree-party-wear-saree-bollywood-original-imah5gcyhgptznuc.jpeg?q=70" class="item_img">
+                                        <h4 class="item_name">Traditional-Dress</h4>
+                                        <h4><del>Rs.1999</del> <span class="item_price">1499</span></h4>
+                                        <input type="button" value="Add-to-Cart" class="item_btn">
+                                    </div>
+                                    <div class="item">
+                                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/shopsy-sari/4/a/e/free-sarees-new2023-partywear-wedding-chiffon-saree-design-2023-original-imah2uvswrc6gyzh.jpeg?q=70"  class="item_img">
+                                        <h4 class="item_name">Classical-Dress</h4>
+                                        <h4><del>Rs.1599</del> <span class="item_price">1299</span></h4>
+                                        <input type="button" value="Add-to-Cart" class="item_btn">
+                                    </div>
+                                    <div class="item">
+                                        <img src="https://rukminim2.flixcart.com/image/612/612/xif0q/sari/q/6/y/free-3696s109j-siril-unstitched-original-imah3y8e2esnxpnd.jpeg?q=70" class="item_img">
+                                        <h4 class="item_name">Ethanic Wear for Women</h4>
+                                        <h4><del>Rs.1799</del> <span class="item_price">999</span></h4>
+                                        <input type="button" value="Add-to-Cart" class="item_btn">
+                                    </div>
+                                </div>
+                            
+                            </div>
+                 </div>
+                 <!--------------kurthas----------------------------------------->
+                    <div class="product_items">
+                        <div class="row_items">
+                            <div class="item">
+                                <img src="https://m.media-amazon.com/images/I/51D-7U3Fr6L._AC_UY350_.jpg" class="item_img">
+                                <h4 class="item_name">Traditional-For-Women</h4>
+                                <h4><del>Rs.1399</del> <span class="item_price">1099</span></h4>
+                                <input type="button" value="Add-to-Cart" class="item_btn">
+                            </div>
+                            <div class="item">
+                                <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/8/a/tr:w-300,/8aa3674RS_ZKP1097SN46N_2.jpg" class="item_img">
+                                <h4 class="item_name">Traditional-Dress</h4>
+                                <h4><del>Rs.1999</del> <span class="item_price">1499</span></h4>
+                                <input type="button" value="Add-to-Cart" class="item_btn">
+                            </div>
+                            <div class="item">
+                                <img src="https://cdn.shopify.com/s/files/1/0121/8376/5088/files/three_1024x1024.jpg?v=1577339708"  class="item_img">
+                                <h4 class="item_name">Classical-Dress</h4>
+                                <h4><del>Rs.1599</del> <span class="item_price">1299</span></h4>
+                                <input type="button" value="Add-to-Cart" class="item_btn">
+                            </div>
+                            <div class="item">
+                                <img src="https://assets.ajio.com/medias/sys_master/root/20230918/Jfxc/65083bccddf7791519e138e7/saabhi_purple_bandhani_print_anarkali_kurta_with_pants_%26_dupatta.jpg" class="item_img">
+                                <h4 class="item_name">Ethanic Wear for Women</h4>
+                                <h4><del>Rs.1799</del> <span class="item_price">999</span></h4>
+                                <input type="button" value="Add-to-Cart" class="item_btn">
+                            </div>
+                        </div>
+                        <div class="row_items">
+                            <div class="item">
+                                <img src="https://m.media-amazon.com/images/I/51D-7U3Fr6L._AC_UY350_.jpg" class="item_img">
+                                <h4 class="item_name">Traditional-For-Women</h4>
+                                <h4><del>Rs.1399</del> <span class="item_price">1099</span></h4>
+                                <input type="button" value="Add-to-Cart" class="item_btn">
+                            </div>
+                            <div class="item">
+                                <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/8/a/tr:w-300,/8aa3674RS_ZKP1097SN46N_2.jpg" class="item_img">
+                                <h4 class="item_name">Traditional-Dress</h4>
+                                <h4><del>Rs.1999</del> <span class="item_price">1499</span></h4>
+                                <input type="button" value="Add-to-Cart" class="item_btn">
+                            </div>
+                            <div class="item">
+                                <img src="https://cdn.shopify.com/s/files/1/0121/8376/5088/files/three_1024x1024.jpg?v=1577339708"  class="item_img">
+                                <h4 class="item_name">Classical-Dress</h4>
+                                <h4><del>Rs.1599</del> <span class="item_price">1299</span></h4>
+                                <input type="button" value="Add-to-Cart" class="item_btn">
+                            </div>
+                            <div class="item">
+                                <img src="https://assets.ajio.com/medias/sys_master/root/20230918/Jfxc/65083bccddf7791519e138e7/saabhi_purple_bandhani_print_anarkali_kurta_with_pants_%26_dupatta.jpg" class="item_img">
+                                <h4 class="item_name">Ethanic Wear for Women</h4>
+                                <h4><del>Rs.1799</del> <span class="item_price">999</span></h4>
+                                <input type="button" value="Add-to-Cart" class="item_btn">
+                            </div>
+                        </div>
+                        <div class="row_items">
+                            <div class="item">
+                                <img src="https://m.media-amazon.com/images/I/51D-7U3Fr6L._AC_UY350_.jpg" class="item_img">
+                                <h4 class="item_name">Traditional-For-Women</h4>
+                                <h4><del>Rs.1399</del> <span class="item_price">1099</span></h4>
+                                <input type="button" value="Add-to-Cart" class="item_btn">
+                            </div>
+                            <div class="item">
+                                <img src="https://adn-static1.nykaa.com/nykdesignstudio-images/pub/media/catalog/product/8/a/tr:w-300,/8aa3674RS_ZKP1097SN46N_2.jpg" class="item_img">
+                                <h4 class="item_name">Traditional-Dress</h4>
+                                <h4><del>Rs.1999</del> <span class="item_price">1499</span></h4>
+                                <input type="button" value="Add-to-Cart" class="item_btn">
+                            </div>
+                            <div class="item">
+                                <img src="https://cdn.shopify.com/s/files/1/0121/8376/5088/files/three_1024x1024.jpg?v=1577339708"  class="item_img">
+                                <h4 class="item_name">Classical-Dress</h4>
+                                <h4><del>Rs.1599</del> <span class="item_price">1299</span></h4>
+                                <input type="button" value="Add-to-Cart" class="item_btn">
+                            </div>
+                            <div class="item">
+                                <img src="https://assets.ajio.com/medias/sys_master/root/20230918/Jfxc/65083bccddf7791519e138e7/saabhi_purple_bandhani_print_anarkali_kurta_with_pants_%26_dupatta.jpg" class="item_img">
+                                <h4 class="item_name">Ethanic Wear for Women</h4>
+                                <h4><del>Rs.1799</del> <span class="item_price">999</span></h4>
+                                <input type="button" value="Add-to-Cart" class="item_btn">
+                            </div>
+                        </div>
+                    
+                    </div>
+         </div>
+         <div class="shop-section">
+            <div class="box1 box">
+            <div class="box-contant">
+                 <h2>Fashion</h2>
+                <div class="box-img" style="background-image:url('https://plus.unsplash.com/premium_photo-1658506787944-7939ed84aaf8?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWVuJTIwZmFzaGlvbnxlbnwwfHwwfHx8MA%3D%3D') ;"></div>
+               <p>see more</p>
+            </div>
+            </div>
+            <div class="box2 box"> <div class="box-contant">
+                <h2>Mobiles</h2>
+               <div class="box-img" style="background-image:url('https://www.godigit.com/content/dam/godigit/directportal/en/realme-mobiles.jpg' ) ;" ></div>
+              <p>see more</p>
+           </div></div>
+            <div class="box3 box"> <div class="box-contant">
+                <h2>electronics</h2>
+               <div class="box-img" style="background-image:url('https://img.freepik.com/premium-photo/photo-electronics-devices-tech-gadgets-concept_798686-101.jpg') ;"></div>
+              <p>see more</p>
+           </div></div>
+            <div class="box4 box"> <div class="box-contant">
+                <h2>furniture</h2>
+               <div class="box-img" style="background-image:url('https://anufurnitures.com/wp-content/uploads/2023/07/AdobeStock_191423292-scaled.jpeg') ;"></div>
+              <p>see more</p>
+           </div>
+            </div>
+         </div>
+         <br>
+    </div>    
+       <footer>
+        <div class="footer">
+            <ul>
+                <p>Get to know Us:</p>
+               <a >About shopeasy</a> 
+               <a >Careers</a> 
+               <a >Press Releases</a> 
+              <a >Amazon Science</a>  
+                
+            </ul>
+            <ul>
+                  	
+                <p>Make Money with Us:</p>
+            <a > Sell on ShopEasy </a>
+            <a >Sell under shopeasy Accelerator </a>
+            <a >Protect and Build Your Brand </a>
+            <a >shopeasy Global Selling </a>
+            <a >Supply to shopeasy </a>
+            <a >Become an Affiliate </a>
+            <a >Fulfilment by shopeasy</a>
+
+            </ul>
+            <ul>
+                <p>Get to know Us:</p>
+                <a >careers</a>
+                <a >blogs</a>
+                <a >About amazon</a>
+                <a >Investor rels\ations</a>
+                <a >Amazon devices</a>
+                <a >Amazon science</a>
+            </ul>
+            <ul >
+                <p>Follow our page on:</p>
+               
+                 <img src="facebook.png" alt="" width="40px"> 
+                 <img src="instagram.png" alt="" width="40px">
+                 <img src="twitter.png" alt="" width="40px">
+                 
+              
+            </ul>
+            <ul>
+                <p>enquries:</p>
+                <a href="">shopeasy@gmail.com</a> 
+            </ul>
+        </div>
+       </footer>  
+       <script>
+        function cartsection(){
+    var cartpage=document.querySelector(".cartpage")
+    if(cartpage.style.display=="block")
+    {
+        cartpage.style.display="none"
+    }
+    else
+    {
+        cartpage.style.display="block"
+    }
+}
+
+function showProducts(pos)
+{
+    var no=Number(pos)
+    var container=document.querySelector(".container")
+    var products=document.querySelectorAll(".product_items")
+   for(var i=0;i<products.length;i++)
+   {
+     if(i==no)
+     {
+         products[i].style.display="block"
+         container.style.display="none"
+     }
+     else
+     {
+         products[i].style.display="none"
+         container.style.display="none"
+     }
+   }
+}
+
+function HomePage()
+{
+    var pannel=document.querySelector(".pannel-options")
+    var productsection=document.querySelector(".homepage")
+    var addspage=document.querySelector(".container")
+    var products=document.querySelectorAll(".product_items")
+    pannel.style.left="-100%"
+    HomePage.style.width="100%"
+    product_items.style.display="block"
+    for(var i=0;i<products.length;i++)
+    {
+        products[i].style.display="none"
+    }
+}
+
+
+//   add to cart 
+var totalamount=document.querySelector(".totalamount")
+var cartitems=document.querySelector(".cartitems")
+var cartcount=document.querySelector(".cartcount")
+var cart_btns=document.querySelectorAll(".item_btn")
+var total=0
+var count=0
+
+cart_btns.forEach((cart_btn)=>{
+
+    cart_btn.addEventListener("click",()=>{
+        var parent=cart_btn.parentNode
+        var product={
+            img:parent.querySelector('.item_img').getAttribute("src"),
+            name:parent.querySelector('.item_name').innerHTML,
+            price:parent.querySelector('.item_price').innerText,
+            qunty:1
+        }
+        total+=Number(product.price)
+        count++
+        totalamount.innerHTML=total
+        cartcount.innerHTML=count
+        cartitems.innerHTML+=`
+        <div class="item_in_cart">
+            <div>
+            <img src="${product.img}" alt="cart_img" class="cart_img">
+            </div>
+            <div>
+            <h5 class="cart_name">${product.name}</h5>
+            </div>
+            <div>
+            <h5 class="cart_price">${product.price}</h5>
+            </div>
+            <div class="update_btn">
+            <button type="button" class="incr_btn">+</button>
+            <span class="cart_qunty">${product.qunty}</span>
+            <button type="button" class="decr_btn">-</button>
+            </div>
+            <div>
+            <h5 class="cart_total">${product.price}</h5>
+            </div>
+            <div>
+            <button type="button" class="remove_btn">Remove</button>
+            </div>
+        </div>
+        `
+        var items_in_cart=document.querySelectorAll(".item_in_cart")
+        items_in_cart.forEach((item_in_cart)=>{
+            var incr_btn=item_in_cart.querySelector(".incr_btn")
+            var decr_btn=item_in_cart.querySelector(".decr_btn")
+            var cart_qunty=item_in_cart.querySelector(".cart_qunty").innerText
+            var cart_total=item_in_cart.querySelector(".cart_total")      
+            var cart_price=item_in_cart.querySelector(".cart_price")
+            var remove_btn=item_in_cart.querySelector(".remove_btn")
+
+        // increment qunty
+        incr_btn.addEventListener("click",()=>{
+            ++cart_qunty
+            item_in_cart.querySelector(".cart_qunty").innerText=cart_qunty
+            cart_total.innerText=Number(cart_price.innerText)*cart_qunty
+            total+=Number(cart_price.innerText)
+            totalamount.innerText=total
+        }) // increment qunty end
+
+         // decrement qunty
+         decr_btn.addEventListener("click",()=>{
+            
+            if(cart_qunty>1)
+            {
+                --cart_qunty
+                item_in_cart.querySelector(".cart_qunty").innerText=cart_qunty
+            cart_total.innerText=Number(cart_price.innerText)*cart_qunty
+            total-=Number(cart_price.innerText)
+            totalamount.innerText=total
+            }
+        }) // decrement qunty end
+
+        // remove from cart
+        remove_btn.addEventListener("click",()=>{
+            item_in_cart.remove()
+            total-=Number(cart_total.innerText)
+            totalamount.innerText=total
+            --count
+            cartcount.innerText=count
+
+             
+        }) // remove from cart end
+           
+            
+        })// items_in_cart forEach end
+
+        
+
+
+       
+    } // add to cart end
+
+    ) // addEventListener end
+
+}
+
+) // cart_btns forEach end..
+
+
+       </script>   
+</body>
+</html>
